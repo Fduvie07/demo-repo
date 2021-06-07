@@ -1,3 +1,3 @@
 # Demo
 
-Some description!
+A demo repository on how to use Git commands.
