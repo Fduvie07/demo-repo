@@ -1,0 +1,203 @@
+html, body {
+  overflow: hidden;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+  font-size: 100%;
+  background-color: #e2e2e2;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+ /*Main operations view style */
+#main {
+  /* background-color: #cc00dc; */
+  width: 70%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px){
+  #main {
+    width: 65%;
+  }
+}
+
+@media (max-width: 580px){
+  #main {
+    width: 98%;
+    padding: 2px;
+  }
+}
+/* Menu bar style */
+#nav_bar {
+  width: fit-content;
+  height: 24px;
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+  padding: 10px 0 0 0;
+  margin: 10px;
+}
+
+#nav_bar div {
+  align-self: center;
+  padding : 5px;
+}
+/* End of Menu Bar style */
+
+/* Operations display screen */
+#display_screen {
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  width: 98%;
+  height: 144px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Output display-screen */
+#output_bar {
+  /* background-color: #fff; */
+  width: 100%;
+  height: 48px;
+  margin: 0;
+  padding: 5px;
+}
+
+#output {
+  /* background-color: blue; */
+  height: 38px;
+  width: 100%;
+  text-align: right;
+  padding: 5px;
+  margin: auto;
+}
+
+
+/* Input-screen */
+#input_bar {
+  /* background-color: red; */
+  width: 100%;
+  height: 96px;
+  margin: 0;
+  padding: 5px;
+}
+
+#input {
+  /* background: #000; */
+  height: 80px;
+  width: 100%;
+  text-align: right;
+  margin: auto;
+  padding: 5px 5px;
+}
+
+/* Memory Operations */
+
+#memory_box {
+  /* background-color: aqua; */
+  /* width: 40%; */
+  max-width: 501px;
+  height: max-content;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.memory_op {
+  height: 48px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 1px;
+}
+@media (max-width: 768px) {
+  #memory_box {
+    width: 100%;
+    max-width: 580px;
+  }
+}
+@media (max-width: 580px){
+  #memory_box {
+    width: 100%;
+    max-width: 580px;
+  }
+}
+
+.memory_op:hover {
+  background-color: rgba(192, 189, 189, 0.548);
+  border: 1px solid rgba(61, 60, 60, 0.356);
+  transition: 300ms ease-in;
+}
+
+table#arithmetic {
+  /* border: 1; */
+  width: 100%;
+  margin: 2px;
+}
+
+tr {
+  height: 65px;
+}
+
+.numb {
+  background-color: rgb(232, 240, 240);
+}
+
+.numb h4 {
+  font-weight: 700;
+}
+
+td {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+td:hover {
+  background-color: rgb(175, 171, 171);
+}
+
+.operations {
+  background-color: rgba(192, 189, 189, 0.548);
+}
+.equal {
+  background-color: rgb(88, 181, 224);
+}
+
+td button {
+  width: 100%;
+  height: 65px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+/* History Panel */
+
+div#history {
+  width: 30%;
+  height: 100%;
+}

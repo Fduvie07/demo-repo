@@ -1,1 +1,86 @@
-<div>Hello world</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Operations view, which includes:
+        1. Menu Bar
+        2. Input and Output display screeen 
+        3. Memory operation buttons
+        4. Normal Operation buttons
+    -->
+    <div id="main">
+        <!-- Menu Bar -->
+        <div id="nav_bar">
+            <div><img src="left-menu-icon.PNG" alt="Left Menu Bar Icon"></div>
+            <div><h3>Standard</h3></div>
+            <div><img src="keep-on-top-icon.PNG" alt="Keep On Top Icon"></div>
+        </div> <!-- End of menu Bar -->
+
+        <!-- Input and Output display screen -->
+        <div id="display_screen">
+            <div id="output_bar">
+                <p id="output"></p>
+            </div>
+            <div id="input_bar">
+                <h1 id="input">0</h1>
+            </div>
+        </div> <!-- End of Input and output display screen -->
+
+        <!-- Memory Operations -->
+        <div id="memory_box">
+            <button class="memory_op">MC</button>
+            <button class="memory_op">MR</button>
+            <button class="memory_op">M+</button>
+            <button class="memory_op">M-</button>
+            <button class="memory_op">MS</button>
+        </div> <!-- End of Memory Operations -->
+        <table id="arithmetic">
+            <tr class="operations">
+                <td><button>%</button></td>
+                <td><button>CE</button></td>
+                <td><button>C</button></td>
+                <td><button><img src="backspace.png" alt="backspace"></button></td>
+            </tr>
+            <tr class="operations">
+                <td><button><sup>1</sup>/<sub>x</sub></button></td>
+                <td><button>x<sup>2</sup></button></td>
+                <td><button><img src="squareRoot.png" alt="square-root"></button></td>
+                <td><button><img src="divide.png" alt="divide"></button></td>
+            </tr>
+            <tr>
+                <td class="numb"><button><h4>7</h4></button></td>
+                <td class="numb"><button><h4>8</h4></button></td>
+                <td class="numb"><button><h4>9</h4></button></td>
+                <td class="operations"><button><img src="multiply.png" alt="multiply"></button></td>
+            </tr>
+            <tr>
+                <td class="numb"><button><h4>4</h4></button></td>
+                <td class="numb"><button><h4>5</h4></button></td>
+                <td class="numb"><button><h4>6</h4></button></td>
+                <td class="operations"><button><img src="subtract.png" alt="subtract"></button></td>
+            </tr>
+            <tr>
+                <td class="numb"><button><h4>1</h4></button></td>
+                <td class="numb"><button><h4>2</h4></button></td>
+                <td class="numb"><button><h4>3</h4></button></td>
+                <td class="operations"><button><img src="addition.png" alt="addition"></button></td>
+            </tr>
+            <tr>
+                <td class="numb"><button><h4><sup>+</sup>/<sub>-</sub></h4></button></td>
+                <td class="numb"><button><h4>0</h4></button></td>
+                <td class="numb"><button><h4>.</h4></button></td>
+                <td class="equal"><button><h4>=</h4></button></td>
+            </tr>
+        </table>
+
+    </div> <!-- End of Main Operations View -->
+    <div id="history"></div>
+</body>
+</html>
